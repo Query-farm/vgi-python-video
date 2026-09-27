@@ -3,3 +3,4 @@ out/
 # derived from public/{vo,sfx,music} by `eleven.py normalize`, no API needed
 public/mix/
 __pycache__/
+.DS_Store

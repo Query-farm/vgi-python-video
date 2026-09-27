@@ -59,5 +59,61 @@ writeFileSync(new URL("title.txt", dir), title + "\n");
 writeFileSync(new URL("description.txt", dir), description);
 writeFileSync(new URL("tags.txt", dir), tags.join(", ") + "\n");
 copyFileSync(here("../out/vgi-explainer.srt"), new URL("captions-en.srt", dir));
+// index.html: the kit as one page, with a copy button per field, so it can be
+// opened in a browser beside YouTube Studio (browsers won't list a folder).
+const esc = (t: string) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const field = (label: string, id: string, text: string, tall = false) => `
+  <section>
+    <div class="head"><h2>${label}</h2><button data-copy="${id}">Copy</button></div>
+    <pre id="${id}" class="${tall ? "tall" : ""}">${esc(text.trimEnd())}</pre>
+  </section>`;
+const page = `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VGI video: YouTube kit</title>
+<style>
+  :root { --paper:#f7f3ea; --card:#fffdf7; --rule:#cfc4ad; --ink:#211a12; --ink2:#5d4632; --gold:#7d5714; --field:#45632f; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#1a1512; --card:#2a2420; --rule:#5f5750; --ink:#f4ece0; --ink2:#c6b8a2; --gold:#d9a441; --field:#8cb878; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.5 -apple-system, "Noto Sans", sans-serif; }
+  main { max-width: 900px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font: 600 34px/1.15 Georgia, serif; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .sub { color: var(--ink2); margin: 0 0 28px; }
+  .sub a, .files a { color: var(--field); }
+  section { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 16px 18px; margin: 0 0 16px; }
+  .head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  h2 { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin: 0; }
+  pre { white-space: pre-wrap; word-break: break-word; font: 14px/1.55 ui-monospace, "JetBrains Mono", monospace; margin: 10px 0 0; }
+  button { font: 600 13px/1 inherit; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; }
+  button.done { background: var(--field); border-color: var(--field); color: #fff; }
+  img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); margin-top: 10px; display: block; }
+  .files { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
+</style></head><body><main>
+  <h1>VGI explainer: YouTube kit</h1>
+  <p class="sub">vgi-python ${esc(build.version)} · ${esc(build.month)} ·
+    <a href="https://youtu.be/J2E51PTZn6o">Published video</a> ·
+    <a href="https://github.com/Query-farm/vgi-python-video">Source repo</a></p>
+  ${field("Title", "title", title)}
+  ${field("Description", "description", description, true)}
+  ${field("Tags", "tags", tags.join(", "))}
+  <section><div class="head"><h2>Thumbnail</h2></div><img src="thumbnail.jpg" alt="YouTube thumbnail"></section>
+  <section><div class="head"><h2>Files</h2></div><ul class="files">
+    <li><a href="vgi-explainer.mp4">vgi-explainer.mp4</a> (the video)</li>
+    <li><a href="captions-en.srt">captions-en.srt</a> (Subtitles, upload "with timing")</li>
+    <li><a href="thumbnail.jpg">thumbnail.jpg</a> (1280×720)</li>
+    <li><a href="UPLOAD.md">UPLOAD.md</a> (step-by-step checklist)</li>
+  </ul></section>
+</main>
+<script>
+  for (const b of document.querySelectorAll("button[data-copy]")) {
+    b.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent);
+      b.textContent = "Copied"; b.classList.add("done");
+      setTimeout(() => { b.textContent = "Copy"; b.classList.remove("done"); }, 1500);
+    });
+  }
+</script></body></html>
+`;
+writeFileSync(new URL("index.html", dir), page);
+
 console.log(`wrote out/youtube/ (title ${title.length}/100 chars, tags ${tags.join(",").length}/500 chars)`);
 console.log(chapters.join("\n"));
