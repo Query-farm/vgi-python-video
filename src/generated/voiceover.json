@@ -1,0 +1,1518 @@
+{
+ "voice": "Daniel",
+ "model": "eleven_multilingual_v2",
+ "scenes": {
+  "intro": {
+   "duration": 12.26,
+   "speechEnd": 11.573,
+   "cues": {
+    "tagline": 4.458
+   },
+   "words": [
+    {
+     "text": "This",
+     "start": 0.0,
+     "end": 0.221
+    },
+    {
+     "text": "is",
+     "start": 0.279,
+     "end": 0.383
+    },
+    {
+     "text": "VGI,",
+     "start": 0.464,
+     "end": 2.125
+    },
+    {
+     "text": "the",
+     "start": 2.473,
+     "end": 2.566
+    },
+    {
+     "text": "Vector",
+     "start": 2.612,
+     "end": 2.868
+    },
+    {
+     "text": "Gateway",
+     "start": 2.902,
+     "end": 3.286
+    },
+    {
+     "text": "Interface.",
+     "start": 3.344,
+     "end": 4.168
+    },
+    {
+     "text": "It",
+     "start": 4.458,
+     "end": 4.598
+    },
+    {
+     "text": "lets",
+     "start": 4.644,
+     "end": 4.841
+    },
+    {
+     "text": "you",
+     "start": 4.876,
+     "end": 4.969
+    },
+    {
+     "text": "extend",
+     "start": 5.027,
+     "end": 5.41
+    },
+    {
+     "text": "DuckDB",
+     "start": 5.515,
+     "end": 6.095
+    },
+    {
+     "text": "and",
+     "start": 6.385,
+     "end": 6.536
+    },
+    {
+     "text": "Haybarn",
+     "start": 6.606,
+     "end": 7.117
+    },
+    {
+     "text": "with",
+     "start": 7.372,
+     "end": 7.558
+    },
+    {
+     "text": "functions,",
+     "start": 7.616,
+     "end": 8.243
+    },
+    {
+     "text": "tables",
+     "start": 8.348,
+     "end": 8.8
+    },
+    {
+     "text": "and",
+     "start": 8.963,
+     "end": 9.125
+    },
+    {
+     "text": "catalogs,",
+     "start": 9.183,
+     "end": 9.857
+    },
+    {
+     "text": "written",
+     "start": 10.077,
+     "end": 10.426
+    },
+    {
+     "text": "in",
+     "start": 10.507,
+     "end": 10.623
+    },
+    {
+     "text": "plain",
+     "start": 10.681,
+     "end": 10.948
+    },
+    {
+     "text": "Python.",
+     "start": 11.029,
+     "end": 12.26
+    }
+   ]
+  },
+  "problem": {
+   "duration": 18.901,
+   "speechEnd": 18.448,
+   "cues": {
+    "a1": 4.296,
+    "a2": 6.246,
+    "a3": 7.465,
+    "a4": 8.626,
+    "matrix": 10.751,
+    "rebuild": 16.416
+   },
+   "words": [
+    {
+     "text": "Extending",
+     "start": 0.0,
+     "end": 0.569
+    },
+    {
+     "text": "DuckDB",
+     "start": 0.639,
+     "end": 1.196
+    },
+    {
+     "text": "normally",
+     "start": 1.834,
+     "end": 2.218
+    },
+    {
+     "text": "means",
+     "start": 2.276,
+     "end": 2.577
+    },
+    {
+     "text": "a",
+     "start": 2.635,
+     "end": 2.682
+    },
+    {
+     "text": "C",
+     "start": 2.752,
+     "end": 2.914
+    },
+    {
+     "text": "extension.",
+     "start": 3.1,
+     "end": 3.831
+    },
+    {
+     "text": "Vectors",
+     "start": 4.296,
+     "end": 4.737
+    },
+    {
+     "text": "and",
+     "start": 4.783,
+     "end": 4.888
+    },
+    {
+     "text": "validity",
+     "start": 4.934,
+     "end": 5.375
+    },
+    {
+     "text": "masks,",
+     "start": 5.433,
+     "end": 6.06
+    },
+    {
+     "text": "string",
+     "start": 6.246,
+     "end": 6.56
+    },
+    {
+     "text": "layouts,",
+     "start": 6.618,
+     "end": 7.21
+    },
+    {
+     "text": "manual",
+     "start": 7.465,
+     "end": 7.825
+    },
+    {
+     "text": "memory,",
+     "start": 7.883,
+     "end": 8.464
+    },
+    {
+     "text": "a",
+     "start": 8.626,
+     "end": 8.684
+    },
+    {
+     "text": "pinned",
+     "start": 8.766,
+     "end": 9.102
+    },
+    {
+     "text": "binary",
+     "start": 9.207,
+     "end": 9.671
+    },
+    {
+     "text": "interface.",
+     "start": 9.729,
+     "end": 10.461
+    },
+    {
+     "text": "And",
+     "start": 10.751,
+     "end": 10.925
+    },
+    {
+     "text": "every",
+     "start": 10.995,
+     "end": 11.227
+    },
+    {
+     "text": "DuckDB",
+     "start": 11.285,
+     "end": 11.761
+    },
+    {
+     "text": "release,",
+     "start": 11.923,
+     "end": 12.481
+    },
+    {
+     "text": "you",
+     "start": 12.701,
+     "end": 12.806
+    },
+    {
+     "text": "rebuild",
+     "start": 12.887,
+     "end": 13.41
+    },
+    {
+     "text": "and",
+     "start": 13.572,
+     "end": 13.746
+    },
+    {
+     "text": "ship",
+     "start": 13.804,
+     "end": 14.025
+    },
+    {
+     "text": "it",
+     "start": 14.071,
+     "end": 14.141
+    },
+    {
+     "text": "again,",
+     "start": 14.176,
+     "end": 14.686
+    },
+    {
+     "text": "for",
+     "start": 14.872,
+     "end": 15.023
+    },
+    {
+     "text": "every",
+     "start": 15.128,
+     "end": 15.476
+    },
+    {
+     "text": "platform,",
+     "start": 15.534,
+     "end": 16.161
+    },
+    {
+     "text": "even",
+     "start": 16.416,
+     "end": 16.718
+    },
+    {
+     "text": "when",
+     "start": 16.765,
+     "end": 16.927
+    },
+    {
+     "text": "your",
+     "start": 16.974,
+     "end": 17.125
+    },
+    {
+     "text": "code",
+     "start": 17.194,
+     "end": 17.531
+    },
+    {
+     "text": "didn't",
+     "start": 17.577,
+     "end": 17.856
+    },
+    {
+     "text": "change.",
+     "start": 17.914,
+     "end": 18.901
+    }
+   ]
+  },
+  "idea": {
+   "duration": 16.858,
+   "speechEnd": 16.069,
+   "cues": {
+    "pipe": 4.307,
+    "t1": 7.732,
+    "t2": 9.706,
+    "t3": 10.495,
+    "t4": 11.668,
+    "crash": 12.864,
+    "survive": 14.327
+   },
+   "words": [
+    {
+     "text": "VGI",
+     "start": 0.0,
+     "end": 0.824
+    },
+    {
+     "text": "runs",
+     "start": 1.289,
+     "end": 1.509
+    },
+    {
+     "text": "your",
+     "start": 1.556,
+     "end": 1.695
+    },
+    {
+     "text": "function",
+     "start": 1.753,
+     "end": 2.183
+    },
+    {
+     "text": "in",
+     "start": 2.403,
+     "end": 2.519
+    },
+    {
+     "text": "its",
+     "start": 2.566,
+     "end": 2.694
+    },
+    {
+     "text": "own",
+     "start": 2.752,
+     "end": 2.949
+    },
+    {
+     "text": "process.",
+     "start": 3.007,
+     "end": 3.762
+    },
+    {
+     "text": "DuckDB",
+     "start": 4.307,
+     "end": 4.853
+    },
+    {
+     "text": "streams",
+     "start": 5.317,
+     "end": 5.77
+    },
+    {
+     "text": "Arrow",
+     "start": 5.875,
+     "end": 6.153
+    },
+    {
+     "text": "record",
+     "start": 6.223,
+     "end": 6.525
+    },
+    {
+     "text": "batches",
+     "start": 6.571,
+     "end": 6.885
+    },
+    {
+     "text": "to",
+     "start": 6.943,
+     "end": 7.036
+    },
+    {
+     "text": "it,",
+     "start": 7.117,
+     "end": 7.384
+    },
+    {
+     "text": "over",
+     "start": 7.732,
+     "end": 7.964
+    },
+    {
+     "text": "standard",
+     "start": 8.011,
+     "end": 9.114
+    },
+    {
+     "text": "I/O,",
+     "start": 8.011,
+     "end": 9.3
+    },
+    {
+     "text": "sockets,",
+     "start": 9.706,
+     "end": 10.356
+    },
+    {
+     "text": "shared",
+     "start": 10.495,
+     "end": 10.797
+    },
+    {
+     "text": "memory,",
+     "start": 10.855,
+     "end": 11.447
+    },
+    {
+     "text": "or",
+     "start": 11.668,
+     "end": 11.819
+    },
+    {
+     "text": "the",
+     "start": 11.877,
+     "end": 11.947
+    },
+    {
+     "text": "web.",
+     "start": 12.005,
+     "end": 12.458
+    },
+    {
+     "text": "If",
+     "start": 12.864,
+     "end": 12.992
+    },
+    {
+     "text": "the",
+     "start": 13.05,
+     "end": 13.119
+    },
+    {
+     "text": "worker",
+     "start": 13.166,
+     "end": 13.444
+    },
+    {
+     "text": "crashes,",
+     "start": 13.491,
+     "end": 14.106
+    },
+    {
+     "text": "DuckDB",
+     "start": 14.327,
+     "end": 14.872
+    },
+    {
+     "text": "keeps",
+     "start": 15.337,
+     "end": 15.627
+    },
+    {
+     "text": "running.",
+     "start": 15.685,
+     "end": 16.858
+    }
+   ]
+  },
+  "code": {
+   "duration": 13.328,
+   "speechEnd": 12.528,
+   "cues": {
+    "types": 2.694,
+    "column": 5.561,
+    "attach": 8.487,
+    "query": 10.344
+   },
+   "words": [
+    {
+     "text": "A",
+     "start": 0.0,
+     "end": 0.104
+    },
+    {
+     "text": "worker",
+     "start": 0.186,
+     "end": 0.546
+    },
+    {
+     "text": "is",
+     "start": 0.731,
+     "end": 0.917
+    },
+    {
+     "text": "ordinary",
+     "start": 0.987,
+     "end": 1.486
+    },
+    {
+     "text": "Python.",
+     "start": 1.567,
+     "end": 2.287
+    },
+    {
+     "text": "The",
+     "start": 2.694,
+     "end": 2.81
+    },
+    {
+     "text": "type",
+     "start": 2.868,
+     "end": 3.135
+    },
+    {
+     "text": "hints",
+     "start": 3.17,
+     "end": 3.379
+    },
+    {
+     "text": "become",
+     "start": 3.437,
+     "end": 3.762
+    },
+    {
+     "text": "the",
+     "start": 3.796,
+     "end": 3.866
+    },
+    {
+     "text": "SQL",
+     "start": 3.947,
+     "end": 4.447
+    },
+    {
+     "text": "signature,",
+     "start": 4.551,
+     "end": 5.213
+    },
+    {
+     "text": "and",
+     "start": 5.561,
+     "end": 5.7
+    },
+    {
+     "text": "compute",
+     "start": 5.759,
+     "end": 6.13
+    },
+    {
+     "text": "gets",
+     "start": 6.177,
+     "end": 6.374
+    },
+    {
+     "text": "a",
+     "start": 6.409,
+     "end": 6.444
+    },
+    {
+     "text": "whole",
+     "start": 6.502,
+     "end": 6.757
+    },
+    {
+     "text": "column",
+     "start": 6.815,
+     "end": 7.152
+    },
+    {
+     "text": "at",
+     "start": 7.21,
+     "end": 7.326
+    },
+    {
+     "text": "once.",
+     "start": 7.407,
+     "end": 7.941
+    },
+    {
+     "text": "Attach",
+     "start": 8.487,
+     "end": 8.87
+    },
+    {
+     "text": "it",
+     "start": 8.928,
+     "end": 8.986
+    },
+    {
+     "text": "from",
+     "start": 9.009,
+     "end": 9.149
+    },
+    {
+     "text": "DuckDB,",
+     "start": 9.218,
+     "end": 10.089
+    },
+    {
+     "text": "and",
+     "start": 10.344,
+     "end": 10.495
+    },
+    {
+     "text": "call",
+     "start": 10.565,
+     "end": 10.774
+    },
+    {
+     "text": "it",
+     "start": 10.832,
+     "end": 10.902
+    },
+    {
+     "text": "like",
+     "start": 10.948,
+     "end": 11.146
+    },
+    {
+     "text": "any",
+     "start": 11.204,
+     "end": 11.413
+    },
+    {
+     "text": "built-in",
+     "start": 11.517,
+     "end": 11.935
+    },
+    {
+     "text": "function.",
+     "start": 12.04,
+     "end": 13.328
+    }
+   ]
+  },
+  "batches": {
+   "duration": 28.189,
+   "speechEnd": 27.553,
+   "cues": {
+    "laneA": 2.821,
+    "laneB": 5.875,
+    "c1": 9.729,
+    "shm": 17.879,
+    "c2": 21.734,
+    "c3": 24.183
+   },
+   "words": [
+    {
+     "text": "Isn't",
+     "start": 0.0,
+     "end": 0.337
+    },
+    {
+     "text": "crossing",
+     "start": 0.395,
+     "end": 0.755
+    },
+    {
+     "text": "the",
+     "start": 0.801,
+     "end": 0.871
+    },
+    {
+     "text": "process",
+     "start": 0.929,
+     "end": 1.358
+    },
+    {
+     "text": "boundary",
+     "start": 1.416,
+     "end": 1.823
+    },
+    {
+     "text": "slow?",
+     "start": 1.881,
+     "end": 2.357
+    },
+    {
+     "text": "Not",
+     "start": 2.821,
+     "end": 2.995
+    },
+    {
+     "text": "when",
+     "start": 3.042,
+     "end": 3.193
+    },
+    {
+     "text": "you",
+     "start": 3.228,
+     "end": 3.309
+    },
+    {
+     "text": "send",
+     "start": 3.379,
+     "end": 3.576
+    },
+    {
+     "text": "batches",
+     "start": 3.634,
+     "end": 4.122
+    },
+    {
+     "text": "instead",
+     "start": 4.226,
+     "end": 4.586
+    },
+    {
+     "text": "of",
+     "start": 4.621,
+     "end": 4.679
+    },
+    {
+     "text": "rows.",
+     "start": 4.737,
+     "end": 5.236
+    },
+    {
+     "text": "One",
+     "start": 5.875,
+     "end": 6.095
+    },
+    {
+     "text": "round",
+     "start": 6.153,
+     "end": 6.409
+    },
+    {
+     "text": "trip",
+     "start": 6.467,
+     "end": 6.699
+    },
+    {
+     "text": "carries",
+     "start": 6.769,
+     "end": 7.163
+    },
+    {
+     "text": "2,048",
+     "start": 7.221,
+     "end": 8.684
+    },
+    {
+     "text": "rows.",
+     "start": 8.754,
+     "end": 9.265
+    },
+    {
+     "text": "DuckDB",
+     "start": 9.729,
+     "end": 10.275
+    },
+    {
+     "text": "and",
+     "start": 10.565,
+     "end": 10.716
+    },
+    {
+     "text": "the",
+     "start": 10.774,
+     "end": 10.844
+    },
+    {
+     "text": "worker",
+     "start": 10.902,
+     "end": 11.25
+    },
+    {
+     "text": "speak",
+     "start": 11.54,
+     "end": 11.842
+    },
+    {
+     "text": "Arrow",
+     "start": 11.947,
+     "end": 12.26
+    },
+    {
+     "text": "IPC,",
+     "start": 12.423,
+     "end": 13.537
+    },
+    {
+     "text": "so",
+     "start": 13.943,
+     "end": 14.106
+    },
+    {
+     "text": "batches",
+     "start": 14.21,
+     "end": 14.582
+    },
+    {
+     "text": "cross",
+     "start": 14.64,
+     "end": 14.942
+    },
+    {
+     "text": "without",
+     "start": 14.977,
+     "end": 15.279
+    },
+    {
+     "text": "conversion,",
+     "start": 15.337,
+     "end": 16.08
+    },
+    {
+     "text": "and",
+     "start": 16.37,
+     "end": 16.521
+    },
+    {
+     "text": "on",
+     "start": 16.579,
+     "end": 16.683
+    },
+    {
+     "text": "one",
+     "start": 16.788,
+     "end": 16.974
+    },
+    {
+     "text": "machine,",
+     "start": 17.02,
+     "end": 17.589
+    },
+    {
+     "text": "shared",
+     "start": 17.879,
+     "end": 18.274
+    },
+    {
+     "text": "memory",
+     "start": 18.344,
+     "end": 18.773
+    },
+    {
+     "text": "moves",
+     "start": 19.063,
+     "end": 19.412
+    },
+    {
+     "text": "them",
+     "start": 19.458,
+     "end": 19.609
+    },
+    {
+     "text": "with",
+     "start": 19.772,
+     "end": 19.969
+    },
+    {
+     "text": "zero",
+     "start": 20.027,
+     "end": 20.422
+    },
+    {
+     "text": "copies.",
+     "start": 20.503,
+     "end": 21.095
+    },
+    {
+     "text": "Pushdown",
+     "start": 21.734,
+     "end": 22.256
+    },
+    {
+     "text": "means",
+     "start": 22.419,
+     "end": 22.674
+    },
+    {
+     "text": "less",
+     "start": 22.732,
+     "end": 22.93
+    },
+    {
+     "text": "comes",
+     "start": 22.976,
+     "end": 23.231
+    },
+    {
+     "text": "back.",
+     "start": 23.289,
+     "end": 23.719
+    },
+    {
+     "text": "That's",
+     "start": 24.183,
+     "end": 24.45
+    },
+    {
+     "text": "around",
+     "start": 24.485,
+     "end": 24.868
+    },
+    {
+     "text": "450",
+     "start": 25.159,
+     "end": 26.656
+    },
+    {
+     "text": "million",
+     "start": 25.159,
+     "end": 26.656
+    },
+    {
+     "text": "rows",
+     "start": 26.714,
+     "end": 26.993
+    },
+    {
+     "text": "a",
+     "start": 27.051,
+     "end": 27.074
+    },
+    {
+     "text": "second.",
+     "start": 27.144,
+     "end": 28.189
+    }
+   ]
+  },
+  "parallel": {
+   "duration": 12.074,
+   "speechEnd": 11.522,
+   "cues": {
+    "threads": 2.032,
+    "fan": 5.236,
+    "flow": 8.707
+   },
+   "words": [
+    {
+     "text": "It",
+     "start": 0.0,
+     "end": 0.174
+    },
+    {
+     "text": "scales",
+     "start": 0.232,
+     "end": 0.615
+    },
+    {
+     "text": "out,",
+     "start": 0.673,
+     "end": 0.871
+    },
+    {
+     "text": "too.",
+     "start": 0.906,
+     "end": 1.393
+    },
+    {
+     "text": "DuckDB",
+     "start": 2.032,
+     "end": 2.577
+    },
+    {
+     "text": "splits",
+     "start": 3.042,
+     "end": 3.425
+    },
+    {
+     "text": "a",
+     "start": 3.471,
+     "end": 3.495
+    },
+    {
+     "text": "query",
+     "start": 3.599,
+     "end": 4.052
+    },
+    {
+     "text": "across",
+     "start": 4.133,
+     "end": 4.493
+    },
+    {
+     "text": "threads,",
+     "start": 4.551,
+     "end": 5.074
+    },
+    {
+     "text": "and",
+     "start": 5.236,
+     "end": 5.375
+    },
+    {
+     "text": "VGI",
+     "start": 5.433,
+     "end": 6.118
+    },
+    {
+     "text": "matches",
+     "start": 6.258,
+     "end": 6.594
+    },
+    {
+     "text": "it",
+     "start": 6.641,
+     "end": 6.711
+    },
+    {
+     "text": "with",
+     "start": 6.745,
+     "end": 6.873
+    },
+    {
+     "text": "several",
+     "start": 6.931,
+     "end": 7.268
+    },
+    {
+     "text": "worker",
+     "start": 7.326,
+     "end": 7.628
+    },
+    {
+     "text": "processes,",
+     "start": 7.674,
+     "end": 8.417
+    },
+    {
+     "text": "each",
+     "start": 8.707,
+     "end": 8.928
+    },
+    {
+     "text": "streaming",
+     "start": 9.091,
+     "end": 9.555
+    },
+    {
+     "text": "its",
+     "start": 9.601,
+     "end": 9.741
+    },
+    {
+     "text": "own",
+     "start": 9.799,
+     "end": 9.973
+    },
+    {
+     "text": "batches",
+     "start": 10.054,
+     "end": 10.495
+    },
+    {
+     "text": "in",
+     "start": 10.716,
+     "end": 10.913
+    },
+    {
+     "text": "parallel.",
+     "start": 10.983,
+     "end": 12.074
+    }
+   ]
+  },
+  "shapes": {
+   "duration": 12.725,
+   "speechEnd": 12.034,
+   "cues": {
+    "s1": 2.02,
+    "s2": 2.961,
+    "s3": 4.017,
+    "s4": 5.317,
+    "s5": 6.072,
+    "plus": 7.396
+   },
+   "words": [
+    {
+     "text": "Pick",
+     "start": 0.0,
+     "end": 0.255
+    },
+    {
+     "text": "from",
+     "start": 0.313,
+     "end": 0.488
+    },
+    {
+     "text": "five",
+     "start": 0.604,
+     "end": 0.987
+    },
+    {
+     "text": "shapes:",
+     "start": 1.033,
+     "end": 1.614
+    },
+    {
+     "text": "scalar,",
+     "start": 2.02,
+     "end": 2.67
+    },
+    {
+     "text": "table,",
+     "start": 2.961,
+     "end": 3.553
+    },
+    {
+     "text": "table-in-out,",
+     "start": 4.017,
+     "end": 4.911
+    },
+    {
+     "text": "aggregate,",
+     "start": 5.317,
+     "end": 5.909
+    },
+    {
+     "text": "and",
+     "start": 6.072,
+     "end": 6.246
+    },
+    {
+     "text": "buffering.",
+     "start": 6.316,
+     "end": 6.931
+    },
+    {
+     "text": "Plus",
+     "start": 7.396,
+     "end": 7.779
+    },
+    {
+     "text": "COPY",
+     "start": 8.069,
+     "end": 8.371
+    },
+    {
+     "text": "formats,",
+     "start": 8.429,
+     "end": 9.067
+    },
+    {
+     "text": "writable",
+     "start": 9.358,
+     "end": 9.834
+    },
+    {
+     "text": "tables",
+     "start": 9.868,
+     "end": 10.356
+    },
+    {
+     "text": "and",
+     "start": 10.612,
+     "end": 10.82
+    },
+    {
+     "text": "global",
+     "start": 10.902,
+     "end": 11.308
+    },
+    {
+     "text": "functions.",
+     "start": 11.366,
+     "end": 12.725
+    }
+   ]
+  },
+  "platform": {
+   "duration": 15.372,
+   "speechEnd": 14.823,
+   "cues": {
+    "query": 2.519,
+    "proj": 5.84,
+    "filter": 6.583,
+    "topn": 7.256,
+    "features": 10.298
+   },
+   "words": [
+    {
+     "text": "A",
+     "start": 0.0,
+     "end": 0.081
+    },
+    {
+     "text": "worker",
+     "start": 0.151,
+     "end": 0.499
+    },
+    {
+     "text": "can",
+     "start": 0.685,
+     "end": 0.836
+    },
+    {
+     "text": "be",
+     "start": 0.894,
+     "end": 0.987
+    },
+    {
+     "text": "a",
+     "start": 1.033,
+     "end": 1.068
+    },
+    {
+     "text": "whole",
+     "start": 1.126,
+     "end": 1.428
+    },
+    {
+     "text": "catalog.",
+     "start": 1.486,
+     "end": 2.171
+    },
+    {
+     "text": "Attach",
+     "start": 2.519,
+     "end": 2.902
+    },
+    {
+     "text": "it,",
+     "start": 2.949,
+     "end": 3.204
+    },
+    {
+     "text": "and",
+     "start": 3.286,
+     "end": 3.425
+    },
+    {
+     "text": "query",
+     "start": 3.495,
+     "end": 3.808
+    },
+    {
+     "text": "it",
+     "start": 3.855,
+     "end": 3.971
+    },
+    {
+     "text": "like",
+     "start": 4.156,
+     "end": 4.377
+    },
+    {
+     "text": "any",
+     "start": 4.423,
+     "end": 4.609
+    },
+    {
+     "text": "database.",
+     "start": 4.667,
+     "end": 5.433
+    },
+    {
+     "text": "Columns,",
+     "start": 5.84,
+     "end": 6.42
+    },
+    {
+     "text": "filters,",
+     "start": 6.583,
+     "end": 7.117
+    },
+    {
+     "text": "and",
+     "start": 7.256,
+     "end": 7.407
+    },
+    {
+     "text": "limits",
+     "start": 7.477,
+     "end": 7.848
+    },
+    {
+     "text": "are",
+     "start": 8.139,
+     "end": 8.29
+    },
+    {
+     "text": "pushed",
+     "start": 8.313,
+     "end": 8.568
+    },
+    {
+     "text": "down",
+     "start": 8.591,
+     "end": 8.905
+    },
+    {
+     "text": "to",
+     "start": 8.975,
+     "end": 9.079
+    },
+    {
+     "text": "the",
+     "start": 9.137,
+     "end": 9.207
+    },
+    {
+     "text": "worker.",
+     "start": 9.253,
+     "end": 9.752
+    },
+    {
+     "text": "Serve",
+     "start": 10.298,
+     "end": 10.612
+    },
+    {
+     "text": "it",
+     "start": 10.646,
+     "end": 10.728
+    },
+    {
+     "text": "over",
+     "start": 10.786,
+     "end": 11.006
+    },
+    {
+     "text": "the",
+     "start": 11.053,
+     "end": 11.122
+    },
+    {
+     "text": "web",
+     "start": 11.169,
+     "end": 11.378
+    },
+    {
+     "text": "with",
+     "start": 11.436,
+     "end": 11.587
+    },
+    {
+     "text": "auth,",
+     "start": 11.645,
+     "end": 12.063
+    },
+    {
+     "text": "and",
+     "start": 12.249,
+     "end": 12.399
+    },
+    {
+     "text": "trace",
+     "start": 12.446,
+     "end": 12.736
+    },
+    {
+     "text": "it",
+     "start": 12.783,
+     "end": 12.852
+    },
+    {
+     "text": "with",
+     "start": 12.899,
+     "end": 13.05
+    },
+    {
+     "text": "OpenTelemetry",
+     "start": 13.108,
+     "end": 13.967
+    },
+    {
+     "text": "and",
+     "start": 14.153,
+     "end": 14.315
+    },
+    {
+     "text": "Sentry.",
+     "start": 14.396,
+     "end": 15.372
+    }
+   ]
+  },
+  "outro": {
+   "duration": 13.421,
+   "speechEnd": 13.102,
+   "cues": {
+    "langs": 4.005,
+    "brand": 10.902
+   },
+   "words": [
+    {
+     "text": "Install",
+     "start": 0.0,
+     "end": 0.534
+    },
+    {
+     "text": "vgi-python,",
+     "start": 0.639,
+     "end": 2.252
+    },
+    {
+     "text": "and",
+     "start": 2.438,
+     "end": 2.577
+    },
+    {
+     "text": "start",
+     "start": 2.635,
+     "end": 2.926
+    },
+    {
+     "text": "building.",
+     "start": 2.984,
+     "end": 3.541
+    },
+    {
+     "text": "There",
+     "start": 4.005,
+     "end": 4.191
+    },
+    {
+     "text": "are",
+     "start": 4.226,
+     "end": 4.331
+    },
+    {
+     "text": "also",
+     "start": 4.365,
+     "end": 4.725
+    },
+    {
+     "text": "SDKs",
+     "start": 4.83,
+     "end": 5.724
+    },
+    {
+     "text": "for",
+     "start": 5.979,
+     "end": 6.142
+    },
+    {
+     "text": "Go,",
+     "start": 6.2,
+     "end": 6.676
+    },
+    {
+     "text": "TypeScript,",
+     "start": 6.838,
+     "end": 7.593
+    },
+    {
+     "text": "Rust,",
+     "start": 7.779,
+     "end": 8.301
+    },
+    {
+     "text": "Java",
+     "start": 8.487,
+     "end": 8.916
+    },
+    {
+     "text": "and",
+     "start": 9.172,
+     "end": 9.358
+    },
+    {
+     "text": "C#.",
+     "start": 9.416,
+     "end": 10.356
+    },
+    {
+     "text": "Docs",
+     "start": 10.902,
+     "end": 11.273
+    },
+    {
+     "text": "are",
+     "start": 11.436,
+     "end": 11.622
+    },
+    {
+     "text": "at",
+     "start": 11.656,
+     "end": 11.714
+    },
+    {
+     "text": "query.farm.",
+     "start": 11.773,
+     "end": 13.421
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+  "_format": "Per-scene narration. {display|spoken} respells a term for the voice only; captions show the display side. [[name]] marks a cue: the frame where that word starts is handed to the scene so an animation beat lands on it.",
+  "scenes": [
+    {
+      "id": "intro",
+      "text": "This is {VGI|V-G-I}, the Vector Gateway Interface. [[tagline]]It lets you extend {DuckDB|Duck D-B} and Haybarn with functions, tables and catalogs, written in plain Python."
+    },
+    {
+      "id": "problem",
+      "text": "Extending {DuckDB|Duck D-B} normally means a C extension. [[a1]]Vectors and validity masks, [[a2]]string layouts, [[a3]]manual memory, [[a4]]a pinned binary interface. [[matrix]]And every {DuckDB|Duck D-B} release, you rebuild and ship it again, for every platform, [[rebuild]]even when your code didn't change."
+    },
+    {
+      "id": "idea",
+      "text": "{VGI|V-G-I} runs your function in its own process. [[pipe]]{DuckDB|Duck D-B} streams Arrow record batches to it, [[t1]]over {standard I/O|standard I-O}, [[t2]]sockets, [[t3]]shared memory, [[t4]]or the web. [[crash]]If the worker crashes, [[survive]]{DuckDB|Duck D-B} keeps running."
+    },
+    {
+      "id": "code",
+      "text": "A worker is ordinary Python. [[types]]The type hints become the SQL signature, [[column]]and compute gets a whole column at once. [[attach]]Attach it from {DuckDB|Duck D-B}, [[query]]and call it like any built-in function."
+    },
+    {
+      "id": "batches",
+      "text": "Isn't crossing the process boundary slow? [[laneA]]Not when you send batches instead of rows. [[laneB]]One round trip carries {2,048|two thousand and forty-eight} rows. [[c1]]{DuckDB|Duck D-B} and the worker speak Arrow {IPC|I-P-C}, so batches cross without conversion, and on one machine, [[shm]]shared memory moves them with zero copies. [[c2]]Pushdown means less comes back. [[c3]]That's around {450 million|four hundred and fifty million} rows a second."
+    },
+    {
+      "id": "parallel",
+      "text": "It scales out, too. [[threads]]{DuckDB|Duck D-B} splits a query across threads, [[fan]]and {VGI|V-G-I} matches it with several worker processes, [[flow]]each streaming its own batches in parallel."
+    },
+    {
+      "id": "shapes",
+      "text": "Pick from five shapes: [[s1]]scalar, [[s2]]table, [[s3]]{table-in-out|table in out}, [[s4]]aggregate, [[s5]]and buffering. [[plus]]Plus COPY formats, writable tables and global functions."
+    },
+    {
+      "id": "platform",
+      "text": "A worker can be a whole catalog. [[query]]Attach it, and query it like any database. [[proj]]Columns, [[filter]]filters, [[topn]]and limits are pushed down to the worker. [[features]]Serve it over the web with auth, and trace it with {OpenTelemetry|Open Telemetry} and Sentry."
+    },
+    {
+      "id": "outro",
+      "text": "Install {vgi-python|V-G-I python}, and start building. [[langs]]There are also {SDKs|S-D-Ks} for Go, TypeScript, Rust, Java and {C#|C sharp}. [[brand]]Docs are at {query.farm|query dot farm}."
+    }
+  ]
+}

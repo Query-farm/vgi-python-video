@@ -1,0 +1,27 @@
+{
+  "name": "vgi-explainer-video",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "node scripts/stamp.ts && remotion render src/index.ts VgiExplainer out/raw.mp4 && scripts/master.sh out/raw.mp4 out/vgi-explainer.mp4 && node scripts/captions.ts",
+    "still": "remotion still src/index.ts VgiExplainer out/still.png",
+    "captions": "node scripts/captions.ts",
+    "assets": "python3 scripts/eleven.py voiceover && python3 scripts/eleven.py normalize",
+    "kit": "node scripts/youtube.ts && remotion still src/index.ts Thumbnail out/youtube/thumbnail.png && ffmpeg -loglevel error -y -i out/youtube/thumbnail.png -q:v 2 out/youtube/thumbnail.jpg && rm out/youtube/thumbnail.png && cp scripts/UPLOAD.md out/youtube/",
+    "readme-thumb": "remotion still src/index.ts ReadmeThumbnail out/video-thumbnail.png && ffmpeg -loglevel error -y -i out/video-thumbnail.png -q:v 3 out/video-thumbnail.jpg && rm out/video-thumbnail.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.529",
+    "@remotion/google-fonts": "^4.0.529",
+    "@remotion/transitions": "^4.0.529",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
